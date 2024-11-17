@@ -35,6 +35,9 @@
 						</ul>
 						<ul class="copyright">
               <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+
+            <ul>
               {{ with .Site.Params.contact.company_name }}
               <li>Company Name: {{ . }}</li>
               {{ end }}
@@ -44,7 +47,7 @@
               {{ with .Site.Params.contact.address }}
               <li>Address: {{ . }}</li>
               {{ end }}
-						</ul>
+            </ul>
 					</footer>
 
 			</div>
