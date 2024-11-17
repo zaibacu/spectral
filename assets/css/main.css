@@ -3954,6 +3954,7 @@ input, select, textarea {
 			font-size: 0.8em;
 			color: rgba(255, 255, 255, 0.5);
 			letter-spacing: 0.225em;
+			list-style: none;
     }
 
 		#footer .icons {
