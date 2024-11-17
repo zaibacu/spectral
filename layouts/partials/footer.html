@@ -35,6 +35,15 @@
 						</ul>
 						<ul class="copyright">
               <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              {{ with .Site.Params.contact.company_name }}
+              <li>Company Name: {{ . }}</li>
+              {{ end }}
+              {{ with .Site.Params.contact.company_code }}
+              <li>Company Code: {{ . }}</li>
+              {{ end }}
+              {{ with .Site.Params.contact.address }}
+              <li>Address: {{ . }}</li>
+              {{ end }}
 						</ul>
 					</footer>
 
